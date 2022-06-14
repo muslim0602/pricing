@@ -10,6 +10,10 @@ html{
   box-sizing: inherit;
   }
 
+  *:focus{
+    outline: 0;
+
+  }
 body{
   display: flex;
   flex-direction: column;
@@ -64,7 +68,7 @@ img{
   width: 100%;
 }
 
-.visuall-yhidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -87,6 +91,15 @@ img{
   background-color: #fff;
 }
 
+.pricing-plan-best {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #696edd;
+  background-image: linear-gradient(135.06deg, #a2a7f0 -0.05%, #696edd 100.05%);;
+}
+
 .pricing-plan:first{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -97,26 +110,85 @@ img{
   border-bottom-right-radius: 10px;
 }
 
+
+
 .pricing-plan-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 28px;
 }
+
 .pricing-plan-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  font-size: 72px;
+  line-height: 72px;
 }
+
 .pricing-plan-currency {
+  margin-right: 8px;
+  font-size: 40px;
+  line-height: 40px;
 }
+
 .pricing-plan-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  border-top: 1px solid rgb(110, 114, 142, 0.25);
+  list-style: none;
+
 }
+
 .pricing-plan-list-item {
+  padding: 12px;
+  border-bottom: 1px solid rgb(110, 114, 142, 0.25);
+
+
 }
 .button {
+  display: inline-block;
+  padding: 13px;
+  margin: 0;
+  border: 0;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  text-decoration: none;
 }
+
 .button-block {
+  display: block;
+  width: 100%;
 }
+
 .button-primery {
+  background-color: #696edd;
+  background-image: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  color: #fff;
 }
-.pricing-plan-best {
-  padding-top: 55px;
-  padding-bottom: 55px;
-  border-radius: 10px;
+
+.button-primery:hover {
+  border: 1px solid #696edd;
+  background-color: #fff;
+  background-image: none;
+  color: #696eaa;
 }
+
 .button-white {
+  background-color: #fff;
+  color: #696edd;
+}
+
+
+.button-white:hover{
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
 }
